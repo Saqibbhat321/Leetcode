@@ -24,7 +24,7 @@ public class RemoveDuplicatesSortedArray2 {
             int length = solution.removeDuplicates(nums);
 
             System.out.println("Number of elements after removing duplicates: " + length);
-            System.out.print("Array after removing duplicates: ");
+            System.out.print("Array after removing duplicates looks like below: ");
             for (int i = 0; i < length; i++) {
                 System.out.print(nums[i] + " ");
             }
