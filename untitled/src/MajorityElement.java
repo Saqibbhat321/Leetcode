@@ -23,6 +23,6 @@ public class MajorityElement {
         int[] nums = {3, 3, 4, 2, 4, 4, 2, 4, 4};
 
         int result = majorityElement(nums);
-        System.out.println("The majority element is: " + result);
+        System.out.println("The majority element is in the given array is : " + result);
     }
 }
