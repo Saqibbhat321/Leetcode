@@ -24,14 +24,16 @@ public class RotateArray {
 //        RotateArray rotateArray = new RotateArray();
         int[] nums = {1,2,3,4,5,6,7};
         int k=3;
-        System.out.println("Original array: ");
+        System.out.println("Original array is : ");
         for(int num: nums)
         {
             System.out.print(num+ " ");
         }
         System.out.println();
+
         rotate(nums,k);
-        System.out.println("Array after rotation: ");
+
+        System.out.println("Array after rotation is: ");
         for(int num: nums)
         {
             System.out.print(num+ " ");
