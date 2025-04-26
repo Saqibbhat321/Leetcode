@@ -7,7 +7,7 @@ public class TwoSumExample {
         Map<Integer, Integer> mapStore = new HashMap<>();
         
         for (int i = 0; i < arr.length; i++) {
-            // ERROR 1: We should check for complement BEFORE putting current element in map
+          // We should check for complement BEFORE putting current element in map
             // Otherwise, we might use the same element twice (when target = 2*arr[i])
             int complement = target - arr[i];
             
