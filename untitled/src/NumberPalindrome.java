@@ -4,7 +4,7 @@ public class NumberPalindrome {
     {
         if(number<0)
         {
-            number=Math.abs(number);
+            number=Math.abs(number); // Handle negative numbers by converting to positive
 
         }
         int originalNum=number;
@@ -12,7 +12,7 @@ public class NumberPalindrome {
         while(number>0)
         {
             int lastDigit=number%10; //obtains last digit
-            reversedNum = (reversedNum*10)+lastDigit; // add last digit to reversedNum
+            reversedNum = (reversedNum*10)+lastDigit;//Multiply by 10 to shift existing digits left, then add the last digit
             number /=10; // Remove last digit from number
         }
         return originalNum == reversedNum;
