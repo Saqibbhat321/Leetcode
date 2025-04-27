@@ -3,6 +3,11 @@ class Solution {
     public boolean containsDuplicate(int[] nums) {
 
             //Time complexity O(n)
+        //🔥 How It Works:
+        //If the number is not in the HashSet ➔ Add it.
+//        If the number already exists in the HashSet ➔ Duplicate found ➔ Return true immediately.
+
+
         Set<Integer> store = new HashSet<>();
         for(int num :nums)
         {
