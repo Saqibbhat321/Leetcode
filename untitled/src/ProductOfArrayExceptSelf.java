@@ -1,9 +1,17 @@
+//Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except
+//nums[i].
+
+The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+
+You must write an algorithm that runs in O(n) time and without using the division operation.
+
+
 public class ProductOfArrayExceptSelf{
+    // Time complexity of this solution is O(n) 
     
-    // Function to return an array where each element is the product of all elements of 'nums' except the current one
     public static int[] productExceptSelf(int[] nums) {
         
-        // Get the length of the input array
+
         int n = nums.length;
         
         // Initialize an array 'left' to store the product of all elements to the left of each index
@@ -24,24 +32,21 @@ public class ProductOfArrayExceptSelf{
             right[i] = right[i + 1] * nums[i + 1];  // Current right[i] = right[i+1] * nums[i+1]
         }
         
-        // Initialize the result array 'ans' to store the final product results
         int[] ans = new int[n];
         
         // Multiply the corresponding elements from the 'left' and 'right' arrays to get the final result
         for (int i = 0; i < n; i++) {
-            ans[i] = left[i] * right[i];  // Final answer is the product of left[i] and right[i]
+            ans[i] = left[i] * right[i];  
         }
-        
-        // Return the result array
+    
         return ans;
     }
     
     public static void main(String[] args) {
         
-        // Sample input array
+       
         int[] nums = {1, 2, 3, 4};
-        
-        // Print the result of the productExceptSelf function
+
         System.out.println(java.util.Arrays.toString(productExceptSelf(nums)));
     }
 }
